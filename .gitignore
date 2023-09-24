@@ -160,4 +160,5 @@ cython_debug/
 .idea/
 
 #add database.ini file to gitigore
-database.ini
+src/database.ini
+.ini
