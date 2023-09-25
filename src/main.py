@@ -1,8 +1,8 @@
-from utils.utils import create_database, save_data_to_database
-from utils.hh_api import get_companies_data
+from src.utils.utils import create_database, save_data_to_database
+from src.utils.hh_api import get_companies_data
 from config import config
-from utils.user_interaction_ru import user_interaction_ru
-from utils.user_interaction_en import user_interaction_en
+from src.utils.user_interaction_ru import user_interaction_ru
+from src.utils.user_interaction_en import user_interaction_en
 
 
 def main():
