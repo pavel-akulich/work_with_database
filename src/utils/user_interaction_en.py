@@ -1,5 +1,5 @@
 from src.config import config
-from classes.db_manager import DBManager
+from src.classes.db_manager import DBManager
 
 
 def user_interaction_en():
