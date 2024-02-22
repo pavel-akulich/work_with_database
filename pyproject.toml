@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Pavel Akulich <pavelakulich1999@gmail.com>"]
 readme = "README.md"
-packages = [{include = "coursework_5"}]
+packages = [{include = "work_with_database"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"

@@ -51,7 +51,7 @@ Before launching the application, familiarize yourself with how to use it.
 3. Follow the instructions in the console.
 
 ## Notes
-- The project was developed as a training assignment and can be further developed and expanded for wider use.
+- The project can be further developed and expanded for wider use
 - Companies whose information is obtained and recorded in the database can be changed to others.
 - To connect to the database is used the `config` function from the file `config.py `.
 - The configuration itself is located in the `database.ini` file, which is not stored in the repository for security reasons.

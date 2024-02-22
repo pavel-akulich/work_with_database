@@ -21,8 +21,8 @@ def main():
     ]
 
     data = get_companies_data(name_companies)
-    create_database('coursework_5', parameters)
-    save_data_to_database(data, 'coursework_5', parameters)
+    create_database('database_vacancies', parameters)
+    save_data_to_database(data, 'database_vacancies', parameters)
 
     input_language = input('Select Language: 1 - RU, 2 -EN: ')
     if input_language == '1':
