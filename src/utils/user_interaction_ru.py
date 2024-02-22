@@ -24,27 +24,27 @@ def user_interaction_ru():
 
         if choice_ru == "1":
 
-            result = db_manager_ru.get_companies_and_vacancies_count('coursework_5', parameters)
+            result = db_manager_ru.get_companies_and_vacancies_count('work_with_database', parameters)
             for el in result:
                 print(el)
 
         elif choice_ru == "2":
             print("Значение None означает,что зарплата не указана")
 
-            result = db_manager_ru.get_all_vacancies('coursework_5', parameters)
+            result = db_manager_ru.get_all_vacancies('work_with_database', parameters)
             for el in result:
                 print(el)
 
         elif choice_ru == "3":
             print("Во многих вакансиях не указана верхняя вилка зарплаты, поэтому средняя считается по нижней вилке")
 
-            salary = db_manager_ru.get_avg_salary('coursework_5', parameters)
+            salary = db_manager_ru.get_avg_salary('work_with_database', parameters)
             round_salary = round(salary)
             print(f'Средняя зарплата по вакансиям составляет - {round_salary} RUB')
 
         elif choice_ru == "4":
 
-            result = db_manager_ru.get_vacancies_with_higher_salary('coursework_5', parameters)
+            result = db_manager_ru.get_vacancies_with_higher_salary('work_with_database', parameters)
             for el in result:
                 print(el)
 
@@ -52,7 +52,7 @@ def user_interaction_ru():
 
             user_keyword = input('Введите ключевое слово для поиска: ')
 
-            result = db_manager_ru.get_vacancies_with_keyword('coursework_5', parameters, user_keyword)
+            result = db_manager_ru.get_vacancies_with_keyword('work_with_database', parameters, user_keyword)
             if result:
                 for el in result:
                     print(el)

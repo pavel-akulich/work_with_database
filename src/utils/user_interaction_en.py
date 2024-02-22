@@ -24,14 +24,14 @@ def user_interaction_en():
 
         if choice_en == "1":
 
-            result = db_manager_en.get_companies_and_vacancies_count('coursework_5', parameters)
+            result = db_manager_en.get_companies_and_vacancies_count('work_with_database', parameters)
             for el in result:
                 print(el)
 
         elif choice_en == "2":
             print("The value None means that the salary is not specified")
 
-            result = db_manager_en.get_all_vacancies('coursework_5', parameters)
+            result = db_manager_en.get_all_vacancies('work_with_database', parameters)
             for el in result:
                 print(el)
 
@@ -39,13 +39,13 @@ def user_interaction_en():
             print("In many vacancies, the upper fork of the salary is not indicated, "
                   "so the average is calculated according to the lower fork")
 
-            salary = db_manager_en.get_avg_salary('coursework_5', parameters)
+            salary = db_manager_en.get_avg_salary('work_with_database', parameters)
             round_salary = round(salary)
             print(f'The average salary for vacancies is - {round_salary} RUB')
 
         elif choice_en == "4":
 
-            result = db_manager_en.get_vacancies_with_higher_salary('coursework_5', parameters)
+            result = db_manager_en.get_vacancies_with_higher_salary('work_with_database', parameters)
             for el in result:
                 print(el)
 
@@ -53,7 +53,7 @@ def user_interaction_en():
 
             user_keyword = input('Enter a keyword to search: ')
 
-            result = db_manager_en.get_vacancies_with_keyword('coursework_5', parameters, user_keyword)
+            result = db_manager_en.get_vacancies_with_keyword('work_with_database', parameters, user_keyword)
             if result:
                 for el in result:
                     print(el)
